@@ -13,6 +13,10 @@
 		E4D7FD5E2BFDC5FB000B3741 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4D7FD5D2BFDC5FB000B3741 /* Base */; };
 		E4D7FD602BFDC5FD000B3741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D7FD5F2BFDC5FD000B3741 /* Assets.xcassets */; };
 		E4D7FD632BFDC5FD000B3741 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4D7FD622BFDC5FD000B3741 /* Base */; };
+		E4D7FD6B2BFDC791000B3741 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7FD6A2BFDC791000B3741 /* Call.swift */; };
+		E4D7FD6E2BFDC7C6000B3741 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7FD6D2BFDC7C6000B3741 /* CallManager.swift */; };
+		E4D7FD702BFDC7EF000B3741 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7FD6F2BFDC7EF000B3741 /* ProviderDelegate.swift */; };
+		E4D7FD722BFDC827000B3741 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7FD712BFDC827000B3741 /* Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E4D7FD5F2BFDC5FD000B3741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D7FD622BFDC5FD000B3741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D7FD642BFDC5FD000B3741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D7FD6A2BFDC791000B3741 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		E4D7FD6D2BFDC7C6000B3741 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		E4D7FD6F2BFDC7EF000B3741 /* ProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		E4D7FD712BFDC827000B3741 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,9 @@
 		E4D7FD552BFDC5FB000B3741 /* CallKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4D7FD6C2BFDC79C000B3741 /* Call */,
 				E4D7FD562BFDC5FB000B3741 /* AppDelegate.swift */,
+				E4D7FD6F2BFDC7EF000B3741 /* ProviderDelegate.swift */,
 				E4D7FD582BFDC5FB000B3741 /* SceneDelegate.swift */,
 				E4D7FD5A2BFDC5FB000B3741 /* ViewController.swift */,
 				E4D7FD5C2BFDC5FB000B3741 /* Main.storyboard */,
@@ -65,6 +75,16 @@
 				E4D7FD642BFDC5FD000B3741 /* Info.plist */,
 			);
 			path = CallKitDemo;
+			sourceTree = "<group>";
+		};
+		E4D7FD6C2BFDC79C000B3741 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7FD6A2BFDC791000B3741 /* Call.swift */,
+				E4D7FD6D2BFDC7C6000B3741 /* CallManager.swift */,
+				E4D7FD712BFDC827000B3741 /* Audio.swift */,
+			);
+			path = Call;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D7FD5B2BFDC5FB000B3741 /* ViewController.swift in Sources */,
+				E4D7FD6B2BFDC791000B3741 /* Call.swift in Sources */,
 				E4D7FD572BFDC5FB000B3741 /* AppDelegate.swift in Sources */,
+				E4D7FD702BFDC7EF000B3741 /* ProviderDelegate.swift in Sources */,
 				E4D7FD592BFDC5FB000B3741 /* SceneDelegate.swift in Sources */,
+				E4D7FD6E2BFDC7C6000B3741 /* CallManager.swift in Sources */,
+				E4D7FD722BFDC827000B3741 /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8T346G9;
+				DEVELOPMENT_TEAM = BF89EEJGGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CallKitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = qtn.CallKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = quangtuanngo.Review;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8T346G9;
+				DEVELOPMENT_TEAM = BF89EEJGGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CallKitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = qtn.CallKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = quangtuanngo.Review;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
